@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class WarpGate : MonoBehaviour
 {
-    public int requiredParts = 1;
+    public int requiredParts = 15;
 
     void OnTriggerEnter(Collider other)
     {
