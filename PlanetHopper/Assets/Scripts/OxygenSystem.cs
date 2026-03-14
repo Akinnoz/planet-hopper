@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class OxygenSystem : MonoBehaviour
 {
-    public float maxOxygen = 100f;
+    public float maxOxygen = 300f;
     public float oxygen;
 
     public float drainRate = 5f;
 
     public Slider oxygenBar;
+
+    bool isGameOver = false;
 
     void Start()
     {
@@ -19,6 +22,8 @@ public class OxygenSystem : MonoBehaviour
 
     void Update()
     {
+        if (isGameOver) return;
+
         oxygen -= drainRate * Time.deltaTime;
 
         oxygenBar.value = oxygen;
@@ -31,7 +36,10 @@ public class OxygenSystem : MonoBehaviour
 
     void GameOver()
     {
+        isGameOver = true;
+
         Debug.Log("Out of Oxygen!");
-        Time.timeScale = 0f;
+
+        SceneManager.LoadScene("LoseScene");
     }
 }
