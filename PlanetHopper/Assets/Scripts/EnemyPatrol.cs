@@ -3,15 +3,15 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public Transform planet;
-    public float moveSpeed = 5f;
+    public float moveSpeed = 2f;
     public float gravityForce = 25f;
+    public float rotateSpeed = 5f;
 
     Rigidbody rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.WakeUp();
     }
 
     void FixedUpdate()
@@ -20,8 +20,14 @@ public class EnemyPatrol : MonoBehaviour
 
         rb.AddForce(gravityDir * gravityForce, ForceMode.Acceleration);
 
-        transform.up = -gravityDir;
+        Quaternion targetRotation =
+            Quaternion.FromToRotation(transform.up, -gravityDir) * transform.rotation;
 
-        transform.Rotate(Vector3.forward * moveSpeed * Time.deltaTime);
+        transform.rotation =
+            Quaternion.Slerp(transform.rotation, targetRotation, rotateSpeed * Time.deltaTime);
+
+        Vector3 moveDir = transform.right;
+
+        rb.MovePosition(rb.position + moveDir * moveSpeed * Time.fixedDeltaTime);
     }
 }

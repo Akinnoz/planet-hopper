@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlanetGravity : MonoBehaviour
 {
@@ -6,6 +6,8 @@ public class PlanetGravity : MonoBehaviour
 
     Rigidbody rb;
     GameObject[] planets;
+
+    Transform currentPlanet;   
 
     void Start()
     {
@@ -17,11 +19,20 @@ public class PlanetGravity : MonoBehaviour
     {
         Transform nearestPlanet = GetNearestPlanet();
 
-        Vector3 direction = (nearestPlanet.position - transform.position).normalized;
 
-        rb.AddForce(direction * gravityForce);
+        if (currentPlanet != nearestPlanet)
+        {
+            currentPlanet = nearestPlanet;
 
-        transform.up = -direction;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
+        Vector3 gravityDir = (nearestPlanet.position - transform.position).normalized;
+
+        rb.AddForce(gravityDir * gravityForce, ForceMode.Acceleration);
+
+        transform.up = -gravityDir;
     }
 
     Transform GetNearestPlanet()
@@ -31,11 +42,11 @@ public class PlanetGravity : MonoBehaviour
 
         foreach (GameObject planet in planets)
         {
-            float distance = Vector3.Distance(transform.position, planet.transform.position);
+            float dist = Vector3.Distance(transform.position, planet.transform.position);
 
-            if (distance < minDistance)
+            if (dist < minDistance)
             {
-                minDistance = distance;
+                minDistance = dist;
                 nearest = planet.transform;
             }
         }

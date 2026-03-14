@@ -12,15 +12,18 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
         Vector3 move = transform.forward * v + transform.right * h;
 
-        transform.position += move * speed * Time.deltaTime;
+        rb.MovePosition(rb.position + move * speed * Time.fixedDeltaTime);
+    }
 
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
