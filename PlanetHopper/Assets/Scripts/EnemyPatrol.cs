@@ -2,10 +2,26 @@ using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour
 {
-    public float speed = 2f;
+    public Transform planet;
+    public float moveSpeed = 5f;
+    public float gravityForce = 25f;
 
-    void Update()
+    Rigidbody rb;
+
+    void Start()
     {
-        transform.Rotate(Vector3.up * speed);
+        rb = GetComponent<Rigidbody>();
+        rb.WakeUp();
+    }
+
+    void FixedUpdate()
+    {
+        Vector3 gravityDir = (planet.position - transform.position).normalized;
+
+        rb.AddForce(gravityDir * gravityForce, ForceMode.Acceleration);
+
+        transform.up = -gravityDir;
+
+        transform.Rotate(Vector3.forward * moveSpeed * Time.deltaTime);
     }
 }

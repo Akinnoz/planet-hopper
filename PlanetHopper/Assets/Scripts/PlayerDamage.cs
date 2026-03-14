@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class PlayerDamage : MonoBehaviour
 {
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("Player hit!");
+            Debug.Log("Player Hit!");
+            Time.timeScale = 0f;
         }
     }
 }
