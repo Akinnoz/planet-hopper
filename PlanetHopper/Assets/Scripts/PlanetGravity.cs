@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlanetGravity : MonoBehaviour
 {
-    public float gravityForce = 20f;
+    public float gravityForce = 25f;
 
     Rigidbody rb;
     GameObject[] planets;
