@@ -896,6 +896,7 @@ GameObject:
   - component: {fileID: 1162123737}
   - component: {fileID: 1162123736}
   - component: {fileID: 1162123741}
+  - component: {fileID: 1162123742}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1040,6 +1041,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 5
   jumpForce: 5
+--- !u!114 &1162123742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162123735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f0b8c851d61ad40858a7dccb69784d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GravityController
+  planet: {fileID: 1493732179}
+  gravityForce: 20
 --- !u!1 &1493732175
 GameObject:
   m_ObjectHideFlags: 0
