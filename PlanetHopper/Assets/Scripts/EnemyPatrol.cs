@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -29,5 +30,13 @@ public class EnemyPatrol : MonoBehaviour
         Vector3 moveDir = transform.right;
 
         rb.MovePosition(rb.position + moveDir * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("LoseScene");
+        }
     }
 }

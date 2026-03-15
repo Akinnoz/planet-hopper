@@ -3,16 +3,30 @@ using UnityEngine.SceneManagement;
 
 public class WarpGate : MonoBehaviour
 {
-    public int requiredParts = 15;
+    public int requiredScore = 15;
+
+    Collider gateCollider;
+
+    void Start()
+    {
+        gateCollider = GetComponent<Collider>();
+
+        gateCollider.isTrigger = false;
+    }
+
+    void Update()
+    {
+        if (GameManager.instance.score >= requiredScore)
+        {
+            gateCollider.isTrigger = true;
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            if (GameManager.instance.score >= requiredParts)
-            {
-                SceneManager.LoadScene("WinScene");
-            }
+            SceneManager.LoadScene("WinScene");
         }
     }
 }
