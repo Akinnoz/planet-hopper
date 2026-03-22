@@ -12,7 +12,7 @@ public class OxygenSystem : MonoBehaviour
     public Slider oxygenBar;
 
     public Image warningOverlay;
-    //public AudioSource warningSound;
+    public AudioSource warningSound;
 
     public float warningLevel = 60f;
 
@@ -41,8 +41,8 @@ public class OxygenSystem : MonoBehaviour
         {
             FlashWarning();
 
-            //if (!warningSound.isPlaying)
-                //warningSound.Play();
+            if (!warningSound.isPlaying)
+                warningSound.Play();
         }
 
         if (oxygen <= 0)
