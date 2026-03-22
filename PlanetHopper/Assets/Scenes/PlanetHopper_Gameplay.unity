@@ -2453,7 +2453,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038098521}
-  - component: {fileID: 1038098523}
+  - component: {fileID: 1038098522}
   m_Layer: 0
   m_Name: CameraPivot
   m_TagString: Untagged
@@ -2477,7 +2477,7 @@ Transform:
   - {fileID: 330585546}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1038098523
+--- !u!114 &1038098522
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2490,7 +2490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraOrbit
   player: {fileID: 1050837342}
-  offset: {x: 0, y: -0.27, z: 5.31}
+  offset: {x: 0, y: -0.27, z: 10.55}
   followSpeed: 5
 --- !u!1 &1044561944
 GameObject:
