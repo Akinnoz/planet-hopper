@@ -6,10 +6,12 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 12f;
 
     Rigidbody rb;
+    Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -24,6 +26,16 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+
+        if (anim != null)
+        {
+            anim.SetFloat("MoveX", h);
+            anim.SetFloat("MoveY", v);
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
