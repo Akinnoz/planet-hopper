@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
-        scoreText.text = "Score: " + score;
+        scoreText.text = "คะแนน : " + score;
     }
 }
