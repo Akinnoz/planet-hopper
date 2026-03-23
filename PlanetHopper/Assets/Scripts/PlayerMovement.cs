@@ -38,7 +38,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+            float force = rb.mass * jumpForce; // F = ma
+            rb.AddForce(transform.up * force, ForceMode.Impulse);
         }
     }
 }
