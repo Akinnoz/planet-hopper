@@ -16,6 +16,6 @@ public class GameManager : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
-        scoreText.text = "คะแนน : " + score;
+        scoreText.text = "ชิ้นส่วน : " + score;
     }
 }
