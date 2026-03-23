@@ -705,7 +705,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -217, y: 247}
+  m_AnchoredPosition: {x: -217, y: 284}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &720013814
@@ -728,9 +728,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "- SpaceRocket (Capsule, Cartoon) \u0E08\u0E32\u0E01 Unity Asset Store\n-
-    Textures \u0E08\u0E32\u0E01 Unity Asset Store\n- \u0E40\u0E2A\u0E35\u0E22\u0E07\u0E1B\u0E23\u0E30\u0E01\u0E2D\u0E1A\u0E08\u0E32\u0E01\u0E41\u0E2B\u0E25\u0E48\u0E07\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E1F\u0E23\u0E35\n-
-    \u0E1F\u0E2D\u0E19\u0E15\u0E4C Bangers,K2D \u0E08\u0E32\u0E01 Google Fonts\n\n\u0E43\u0E0A\u0E49\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E01\u0E32\u0E23\u0E28\u0E36\u0E01\u0E29\u0E32\u0E40\u0E17\u0E48\u0E32\u0E19\u0E31\u0E49\u0E19"
+  m_text: "- Free Animated Space Man From Unity Asset Store By HONETi\n- Cute Monster
+    Ghost's FREE From Unity Asset Store By SR Studios Kerala\n- FREE Stylized Textures
+    - RPG Environment  From Unity Asset Store By Blink\n- \u0E40\u0E2A\u0E35\u0E22\u0E07\u0E1B\u0E23\u0E30\u0E01\u0E2D\u0E1A\u0E08\u0E32\u0E01\u0E41\u0E2B\u0E25\u0E48\u0E07\u0E40\u0E2A\u0E35\u0E22\u0E07\u0E1F\u0E23\u0E35\n-
+    \u0E1F\u0E2D\u0E19\u0E15\u0E4C Bangers,K2D \u0E08\u0E32\u0E01 Google Fonts"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf55786cf51b08345babf2246b784be8, type: 2}
   m_sharedMaterial: {fileID: 4982086037102080027, guid: bf55786cf51b08345babf2246b784be8, type: 2}
@@ -757,8 +758,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -796,7 +797,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -522.7605, y: -18.37182, z: 31.124283, w: -195.67245}
+  m_margin: {x: -522.7605, y: -18.37182, z: 15.43959, w: -195.67245}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -919,7 +920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 678, y: 288}
+  m_AnchoredPosition: {x: 678, y: 325}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &951669810
@@ -944,10 +945,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u0E42\u0E1B\u0E23\u0E40\u0E08\u0E04\u0E19\u0E35\u0E49\u0E43\u0E0A\u0E49
     Asset \u0E1F\u0E23\u0E35\u0E08\u0E32\u0E01\u0E41\u0E2B\u0E25\u0E48\u0E07\u0E15\u0E48\u0E32\u0E07
-    \u0E46 \u0E14\u0E31\u0E07\u0E19\u0E35\u0E49\n\n- FreeAnimatedSpaceMan \u0E08\u0E32\u0E01
-    Unity Asset Store\n- 3D Enivronment Assets \u0E08\u0E32\u0E01 Unity Asset Store\n-
-    Cyber_Box \u0E08\u0E32\u0E01 Unity Asset Store\n- Dynamic Space Background  \u0E08\u0E32\u0E01
-    Unity Asset Store\n"
+    \u0E46 \u0E14\u0E31\u0E07\u0E19\u0E35\u0E49\n\n- Cyber Box  From Unity Asset
+    Store By Tausoft\n- Dynamic Space Background Lite From Unity Asset Store By DinV
+    Studio\n- 3D Low Poly Environment Assets From Unity Asset Store By MochiModels\n-
+    Rocket (Cartoon, Capsule) From Unity Asset Store By Texture Me!\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bf55786cf51b08345babf2246b784be8, type: 2}
   m_sharedMaterial: {fileID: 4982086037102080027, guid: bf55786cf51b08345babf2246b784be8, type: 2}
@@ -974,8 +975,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1013,7 +1014,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -393.6903, y: -18.37182, z: -99.19914, w: -161.33127}
+  m_margin: {x: -393.6903, y: -18.37182, z: -108.7318, w: -161.33127}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1061,7 +1062,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0, y: 275}
+  m_AnchoredPosition: {x: -0, y: 324}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &983980876
@@ -1084,7 +1085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6218effe76d5c0a4d9499e2c069cd4a9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e712239b63efdf04fac484ef19a6b6a0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1129,14 +1130,14 @@ RectTransform:
   m_GameObject: {fileID: 1039615275}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 18.992163, y: 15.002622, z: 11.693961}
+  m_LocalScale: {x: 18.992163, y: 15.751253, z: 11.693961}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 615633602}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: -238.07373}
+  m_AnchoredPosition: {x: 0, y: -264}
   m_SizeDelta: {x: 100, y: 101.8241}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1039615277
@@ -1348,7 +1349,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 197}
+  m_AnchoredPosition: {x: 0, y: 233}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2095998660
