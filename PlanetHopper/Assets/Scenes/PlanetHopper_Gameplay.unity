@@ -352,7 +352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &169749724
 Transform:
   m_ObjectHideFlags: 0
@@ -985,7 +985,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: -17.3}
+  m_LocalPosition: {x: 0, y: 2, z: -0.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2490,8 +2490,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraOrbit
   player: {fileID: 1050837342}
-  offset: {x: 0, y: -0.27, z: 10.55}
-  followSpeed: 5
+  height: 6
+  distance: 5.11
+  followSpeed: 3
 --- !u!1 &1044561944
 GameObject:
   m_ObjectHideFlags: 0
@@ -2584,7 +2585,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   speed: 4
-  jumpForce: 30
+  jumpForce: 20
+  cameraTransform: {fileID: 1038098521}
 --- !u!136 &1050837346
 CapsuleCollider:
   m_ObjectHideFlags: 0
